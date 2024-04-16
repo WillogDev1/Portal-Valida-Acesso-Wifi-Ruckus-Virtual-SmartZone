@@ -1,5 +1,5 @@
 # Portal Colégio Ser Acessa Wi-Fi :shipit:
-Portal Ser Wifi
+Portal de validação de acesso ao Wifi esenvolvido para colégio, no meu atual serviço.
 
 # Linguagems e Ferramentas :hammer:
 - PHP
