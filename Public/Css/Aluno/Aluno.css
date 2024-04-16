@@ -1,0 +1,348 @@
+
+@font-face {
+    font-family: 'Aestetico';
+    src: url('/Public/Assets/Fonts/Arsteticon/aestetico-informal-bold.otf') format('truetype')
+}
+
+@font-face {
+    font-family: 'TOMO Acuario';
+    src: local('TOMO Acuario Regular'), local('TOMO-Acuario-Regular'),
+        url('/Public/Assets/Fonts/TOMOAcuario-Regular/TOMOAcuario-Regular.woff2') format('woff2'),
+        url('/Public/Assets/Fonts/TOMOAcuario-Regular/TOMOAcuario-Regular.woff') format('woff'),
+        url('/Public/Assets/Fonts/TOMOAcuario-Regular/TOMOAcuario-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body
+{
+    background-image: url('/Public/Assets/Images/Ativo14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #004A98;
+    width: auto;
+    height: auto;
+}
+.wrap-footer
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto; /* Alterando para 'auto' para que as linhas se ajustem ao conteúdo */
+    gap: 10px; /* Reduzindo o espaçamento entre as linhas */
+}
+.wrap-footer img
+{
+    width: auto;
+    height: auto;
+}
+.wrap
+{
+    display: grid;
+    grid-template-rows: auto auto auto; /* Alterando para 'auto' para que as linhas se ajustem ao conteúdo */
+    gap: 10px; /* Reduzindo o espaçamento entre as linhas */
+}
+
+.wrap-header
+{
+    padding-top: 2%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.wrap-header-message
+{
+    text-shadow: 4px 4px black;
+    font-family: 'TOMO Acuario';
+    color: #FFA900;
+    font-size: 56px;
+    display: inline;
+}
+.wrap-header-message span
+{
+
+    font-size: 92px;
+
+}
+.wrap-header-logo
+{
+    text-align: right;
+    
+}
+.wrap-header-logo img
+{
+    width: auto;
+    height: auto;
+}
+.wrap-header-img
+{
+    text-align: left;
+}
+.wrap-header-img img
+{
+    transform: rotateY(180deg);
+    width: 30%;
+    height: auto;
+}
+
+
+.wrap-content
+{
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px; /* Reduzindo a margem superior */
+
+}
+
+
+@font-face {
+    font-family: 'TOMO Acuario';
+    src: local('TOMO Acuario Regular'), local('TOMO-Acuario-Regular'),
+        url('/Public/Assets/Fonts/TOMOAcuario-Regular/TOMOAcuario-Regular.woff2') format('woff2'),
+        url('/Public/Assets/Fonts/TOMOAcuario-Regular/TOMOAcuario-Regular.woff') format('woff'),
+        url('/Public/Assets/Fonts/TOMOAcuario-Regular/TOMOAcuario-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --dark-color-lighten: #f2f5ff;
+    --red-card: #E02D4B;
+    --blue-card: #fff;
+    --purple-card: #F07716;
+    --btn: #141414;
+    --btn-hover: #3a3a3a;
+    --text: #fbf7f7;
+}
+
+/*===== RESET =====*/
+
+
+button {
+    font-family: 'TOMO Acuario';
+    display: inline-block;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    color: var(--text);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+/*===== CARD =====*/
+.container {
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    padding: 1rem;
+    width: calc(100% - 20px); /* Definindo largura com base na largura da tela */
+    max-width: 400px; /* Limitando a largura máxima */
+    height: 300px; /* Mantendo a altura */
+    margin: 0 10px 20px; /* Adicionando margem para espaçamento */
+    box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+    border-radius: 0.9rem;
+    background-color: var(--red-card);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.card button {
+    border-radius: 15px;
+    background-color: #12162C;
+    color: #FFA900;
+    font-size: 23px;
+}
+
+
+.card-blue {
+    background: var(--blue-card);
+}
+
+.card-tree {
+    background: var(--purple-card);
+}
+
+.product-image {
+    height: 230px;
+    width: 100%;
+    text-align: center;
+    transform: translate(0, -1.5rem);
+    transition: transform 500ms ease-in-out;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+}
+
+.product-info {
+    text-align: center;
+}
+
+.card:hover .product-image {
+    transform: translate(-1.5rem, -7rem) rotate(-20deg);
+}
+
+.product-info h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.product-info p {
+    margin: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.buy-btn {
+    background-color: var(--btn);
+    padding: 0.6rem 3.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 300ms ease;
+}
+
+.buy-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.fav {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid#000;
+    display: grid;
+    place-items: center;
+}
+
+.svg {
+    height: 25px;
+    width: 25px;
+    fill: #fff;
+    transition: all 500ms ease;
+}
+
+.fav:hover .svg {
+    fill: #000;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        padding: 2rem 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .wrap-header-message
+    {
+        font-size: 42px;
+    }
+    .wrap-header-message span
+    {
+        font-size: 52px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Reduzindo a largura para duas cards por linha */
+    }
+    .wrap-header-message
+    {
+        text-shadow: 4px 4px black;
+        font-family: 'TOMO Acuario';
+        color: #FFA900;
+        font-size: 26px;
+        display: inline;
+    }
+    .wrap-header-message span
+    {
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* Largura total para uma card por linha */
+        max-width: 300px; /* Removendo a largura máxima */
+        height: auto; /* Altura automática */
+    }
+    .card img {
+    max-width: 80%;
+    height: 80%;
+    user-select: none;
+}
+}
+
+.wrap-content p
+{
+    font-family: 'Aestetico';
+    color: #12162C;
+}
+
+.wrap-content h3
+{
+    font-size: 32px;
+    font-family: 'TOMO Acuario';
+    color: #12162C;
+}
+.wrap-content input
+{
+    text-align: center;
+    background: #EFEFEF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 2px 2px #8d8a8a;
+    opacity: 1;
+    width: 90%;
+    /* Ajustado para ser um pouco menor */
+    height: 50px;
+    /* Aumentar a altura do input */
+    border-radius: 10px;
+    border: none;
+    /* Remover a borda caso exista */
+    padding: 0 ;
+    /* Adicionar um pouco de padding interno horizontal */
+    margin-top: 10px;
+    /* Espaçamento superior para separar dos outros elementos */
+    font-size: 16px;
+    /* Opcional: Ajustar o tamanho da fonte */
+}
+
+.wrap-content button
+{
+    background-color: #FFA900;
+    color: #12162C;
+}
