@@ -14,10 +14,10 @@ Portal de validação de acesso ao Wifi esenvolvido para colégio, no meu atual 
 - Rotas
 
 # Sobre :heavy_exclamation_mark:
-Projeto vem validar o acesso ao Wi-fi do Colégio Ser atraves do presente website. As validações devem ocorrer para:
+Projeto vem validar o acesso ao Wi-fi atraves do presente website. As validações devem ocorrer para:
 - Visitantes
 - Colaboradores
-- Alunos
+- Alunos (Por se tratar de uma escola mas pode ser qualquer categoria)
 
 # Visitante
 A validação deve ocorrer atraves de SMS que sera enviado ao usuario um token de 4 digitos.
@@ -31,4 +31,3 @@ A validação deve ocorrer atraves de uma planilha contendo todos os numeros de 
 # Segurança
 - Token é salvo na sessão do usuario e enviado ao servidor.
 - Tratativa de liberação é feita no servidor.
-- Rotas não expondo estrutura.
